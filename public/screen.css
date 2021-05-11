@@ -10,3 +10,52 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+h1,
+h2 {
+  color: blue;
+  background-color: yellow;
+  border: 1px solid black; /* shorthand, multiple properties on the same line*/
+  padding: 2rem 0.5rem 1rem 4rem;
+  margin: 1rem;
+  border-radius: 2rem 2rem 5rem 5rem;
+}
+/* 'h1' is an tag selector, simplest selector, applies to h1 elements  */
+p {
+  color: red;
+}
+p:hover {
+  text-transform: uppercase;
+  margin: 1rem;
+}
+li {
+  margin: 2rem;
+}
+li:hover {
+  margin: 1rem;
+}
+p::before {
+  content: '** ';
+}
+li:nth-child(even) {
+  color: green;
+}
+/* 'p' is an element selector, simplest selector, applies to p elements  */
+.first {
+  font-weight: bold;
+}
+/* All the elements containing done in their class "done" are struck-through */
+.done {
+  text-decoration: line-through;
+}
+#polite {
+  font-family: cursive;
+}
+#rude {
+  font-family: monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+ul h2 {
+  text-decoration: underline;
+}
